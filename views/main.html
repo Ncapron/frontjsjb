@@ -1,0 +1,28 @@
+{{mavariable}} Fontainebleau
+<br />
+<input type="text" ng-model='mavariable'>
+<button type="button" ng-click='mafonction()'>Click</button>
+
+<hr />
+
+<table>
+
+    <tr>
+        <th>Nom</th>
+        <th>Numero</th>
+    </tr>
+
+    <tr ng-repeat="contact in contacts">
+        <td>{{contact.nom}}</td>
+        <td>{{contact.tel}}</td>
+        <td><button type="button" ng-click="supprimer($index)">Supprimer</button> </td>
+    </tr>
+
+    <tr>
+        <td><input type="text" ng-model="nom" /></td>
+        <td><input type="text" ng-model="numtel" /></td>
+    </tr>
+
+</table>
+
+<button type="boutton" ng-click="enregistrer()">enregistrer</button>
